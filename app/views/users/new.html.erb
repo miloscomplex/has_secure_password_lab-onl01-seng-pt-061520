@@ -1,0 +1,8 @@
+<h1>Users#new</h1>
+<p>Create a username and password below</p>
+<%= form_for :user, url: users_create_path do |f| %>
+  Username: <%= f.text_field :name %><br>
+  Password: <%= f.password_field :password %><br>
+  Password Confirmation: <%= f.password_field :password_confirmation %><br>
+  <%= f.submit "Submit" %>
+<% end %>
